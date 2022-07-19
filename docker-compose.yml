@@ -1,20 +1,22 @@
 version: "3.9"
 services:
+  micro-root:
+    build: ./root-config
+    image: micro-root
+    ports:
+      - "9000:80"
   micro-angular:
-    build:
-      context: ./angular-app
-      dockerfile: Dockerfile
+    build: ./angular-app
+    image: micro-angular
     ports:
       - "4200:80"
   micro-react:
-    build:
-      context: ./react-app
-      dockerfile: Dockerfile
+    build: ./react-app
+    image: micro-react
     ports:
       - "8080:80"
   micro-vue:
-    build:
-      context: ./vue
-      dockerfile: Dockerfile
+    build: ./vue
+    image: micro-vue
     ports:
       - "5004:80"
