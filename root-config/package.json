@@ -1,5 +1,5 @@
 {
-  "name": "@org1/root-config",
+  "name": "root-config",
   "scripts": {
     "start": "webpack serve --port 9000 --env isLocal",
     "lint": "eslint src --ext js,ts,tsx",

@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  micro-angular:
+    build:
+      context: ./angular-app
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
+  micro-react:
+    build:
+      context: ./react-app
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+  micro-vue:
+    build:
+      context: ./vue
+      dockerfile: Dockerfile
+    ports:
+      - "5004:80"
