@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Single SPA React Angular</title>
+    <title>Single SPA React Angular Vue</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="importmap-type" content="systemjs-importmap" />
     <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js"></script>
@@ -83,17 +83,17 @@
 
         singleSpa.registerApplication(
           "react-app",
-          () => System.import("sample-vue"),
+          () => System.import("react-app"),
           (location) => location.href.includes("/react")
         );
         singleSpa.registerApplication(
           "angular-app",
-          () => System.import("sample-react"),
+          () => System.import("angular-app"),
           (location) => location.href.includes("/angular")
         );
         singleSpa.registerApplication(
           "vue-app",
-          () => System.import("sample-react"),
+          () => System.import("vue-app"),
           (location) => location.href.includes("/vue")
         );
         singleSpa.start();
