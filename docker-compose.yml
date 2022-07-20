@@ -16,7 +16,7 @@ services:
     ports:
       - "8080:80"
   micro-vue:
-    build: ./vue
+    build: ./vue-app
     image: micro-vue
     ports:
       - "5004:80"
